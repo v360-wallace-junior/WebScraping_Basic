@@ -1,0 +1,21 @@
+# Ambiente Virtual
+.venv/
+venv/
+ENV/
+env/
+
+# Caches do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Arquivos de Dados Gerados (Evita enviar seus resultados para o Git)
+*.csv
+*.json
+*.xml
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
