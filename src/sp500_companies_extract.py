@@ -13,7 +13,7 @@ def extract_sp500_companies(html_content: str) -> list[dict[str, str]]:
     rows = table.find_all("tr", attrs={'id': re.compile(r'^mw')})
     # print(rows)
 
-    for row in rows[1:]:
+    for row in rows[1:5]:
         # print([cell.get_text(strip=True) for cell in row.find_all("td")])
         cells = row.find_all("td")
         if len(cells) >= 8:
