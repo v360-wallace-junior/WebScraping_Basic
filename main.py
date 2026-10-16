@@ -1,5 +1,5 @@
-from src.yaholl_finance import extract_quote_data
-from src.sp500_companies_extract import extract_sp500_companies
+from src.static.yaholl_finance import extract_quote_data
+from src.static.sp500_companies_extract import extract_sp500_companies
 from src.utils import get_response
 
 
@@ -36,3 +36,4 @@ if __name__ == "__main__":
     for company in companies:
         get_finance_datails(company["symbol"])
         print("--------------------------------------------------")
+    
